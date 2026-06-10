@@ -1,0 +1,183 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+.loading {
+	text-align: center;
+	margin-top: 40px;
+	color: white;
+}
+
+.page {
+	min-height: 100vh;
+	background-size: 100%;
+	background-position: top center;
+	background-repeat: repeat-y;
+	color: white;
+	font-family: Arial, sans-serif;
+}
+
+.overlay {
+	min-height: 100vh;
+	padding: 28px 16px;
+	background: linear-gradient( 180deg, rgba(0, 10, 10, 0.05), rgba(0, 10, 10, 0.15), rgba(0, 10, 10, 0.35) );
+}
+
+.content {
+	width: 100%;
+	max-width: 760px;
+	margin: 0 auto;
+	padding-top: 430px;
+}
+
+.glass-box {
+	margin: 18px auto;
+	padding: 22px;
+	border: 1px solid rgba(0, 255, 240, 0.65);
+	border-radius: 20px;
+	background: rgba(0, 30, 35, 0.42);
+	backdrop-filter: blur(9px);
+	box-shadow: 0 12px 35px rgba(0, 0, 0, 0.35);
+	text-align: center;
+	line-height: 2;
+	color: white;
+	text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.title-box {
+	font-size: 22px;
+	font-weight: 800;
+}
+
+.kurdish-box {
+	font-size: 21px;
+	font-weight: 600;
+}
+
+.english-box {
+	font-size: 22px;
+	line-height: 1.7;
+	font-weight: 500;
+}
+
+.bottom-line {
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.contact-icons {
+	margin: 34px auto 28px;
+	display: flex;
+	justify-content: center;
+	gap: 42px;
+}
+
+.contact-item {
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	font-weight: 700;
+	font-size: 18px;
+	text-shadow: 0 3px 8px rgba(0, 0, 0, 0.7);
+}
+
+.circle {
+	width: 92px;
+	height: 92px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 8px;
+	font-size: 44px;
+	box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45), inset 0 0 18px rgba(255, 255, 255, 0.25);
+}
+
+.whatsapp .circle {
+	background: linear-gradient(135deg, #11b94d, #35ee73);
+}
+
+.viber .circle {
+	background: linear-gradient(135deg, #5732b4, #9c68f0);
+}
+
+.call .circle {
+	background: linear-gradient(135deg, #088bbd, #35c9ef);
+}
+
+.site-footer {
+	width: 100%;
+	margin: 18px auto 0;
+	padding: 18px;
+	border-radius: 18px;
+	background: rgba(0, 35, 38, 0.42);
+	backdrop-filter: blur(8px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	font-size: 24px;
+	color: white;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+	.site-footer svg {
+		color: #00cfff;
+	}
+
+@media (max-width: 600px) {
+	.overlay {
+		padding: 20px 14px;
+	}
+
+	.content {
+		padding-top: 405px;
+	}
+
+	.glass-box {
+		padding: 18px;
+		margin: 14px auto;
+		border-radius: 18px;
+	}
+
+	.title-box {
+		font-size: 18px;
+	}
+
+	.kurdish-box {
+		font-size: 19px;
+		line-height: 2.1;
+	}
+
+	.english-box {
+		font-size: 18px;
+	}
+
+	.bottom-line {
+		font-size: 17px;
+	}
+
+	.contact-icons {
+		gap: 24px;
+		margin-top: 30px;
+	}
+
+	.circle {
+		width: 76px;
+		height: 76px;
+		font-size: 36px;
+	}
+
+	.contact-item {
+		font-size: 16px;
+	}
+
+	.site-footer {
+		font-size: 22px;
+	}
+}
